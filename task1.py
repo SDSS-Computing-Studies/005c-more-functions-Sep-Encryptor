@@ -15,9 +15,9 @@ assert btcTocad(1) == 45000
 """
 
 def btcTocad():
-    pass
-
-
+    currBTC = 45000
+    totalamount = "amount" * currBTC
+    return totalamount
 
 
 assert btcTocad(1) == 45000
