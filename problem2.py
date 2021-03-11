@@ -13,22 +13,17 @@ assert hypotenuse(12,5,False) == 13
 assert hypotenuse(5,3,True) == 4
 (2 points)
 """
-import math
+def hypotenuse(a,b, values):
+    if values == True:
+        if a > b:
+            hypotenuse = (a ** 2 - b ** 2) ** 0.5
+        elif b > a:
+            hypotenuse = (b ** 2 - a ** 2) ** 0.5
+    elif values == False:
+        hypotenuse = (a ** 2 + b ** 2) ** 0.5
+        return hypotenuse
 
-def hypotenuse(a,b,c):
-    if c == True:
-        p1 = (a**2)-(b**2)
-        p2 = float(math.sqrt(p1))
-        return p2
-    elif c == False:
-        return math.sqrt(a**2 + b**2)
+assert hypotenuse(5,3,True) == 4
 
-        x = hypotenuse(5,3,True)
-        print(int(x))
 
-        y = hypotenuse(12,5,False)
-        print(int(y))
-
-        assert hypotenuse(12,5,Flase) == 13
-        assert hypotenuse(5,3,True) == 4
 
