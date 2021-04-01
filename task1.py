@@ -13,11 +13,11 @@ Sample assertions:
 assert btcTocad(1) == 45000
 (2 points) 
 """
-
-def btcTocad():
+def btcTocad(amount):
     currBTC = 45000
-    totalamount = "amount" * currBTC
+    totalamount = amount * currBTC
     return totalamount
+
 
 
 assert btcTocad(1) == 45000
